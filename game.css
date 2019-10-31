@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=McLaren&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: none;
+    background: #F8F8F8;
+}
+
+* {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+}
+
+header {
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #4A4A4A;
+    height: 70px;
+    width: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive;
+    z-index: 999;
+    background: #E7E7E7;
+}
+
+header label {
+    width: 70px;
+    display: list-item;
+    line-height: 20px;
+    height: 22px;
+    color: #4A4A4A;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#game .m-snake {
+    left: 0;
+    top: 0;
+    background: #4D7C69;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 988;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    transition: width 500ms ease-in-out, height 500ms ease-in-out;
+}
+
+#game .m-snake.start {
+    margin-left: -o-calc(50vw - 25px);
+    margin-left: -webkit-calc(50vw - 25px);
+    margin-left: -moz-calc(50vw - 25px);
+    margin-top: -o-calc(50vh - 25px);
+    margin-top: -webkit-calc(50vh - 25px);
+    margin-top: -moz-calc(50vh - 25px);
+    width: 50px;
+    height: 50px;
+}
+
+#game .enemy {
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 987;
+    background: #A03C44;
+}
+
+footer {
+    z-index: 999;
+    height: 33px;
+    width: 180px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+footer a {
+    bottom: 0;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid #4A4A4A;
+    background: #E7E7E7;
+    height: 33px;
+    width: 180px;
+    position: absolute;
+    left: 0;
+    box-sizing: border-box;
+    font-family: 'McLaren', cursive;
+    text-align: center;
+    cursor: pointer;
+    color: #4A4A4A;
+    text-decoration: none;
+}
+
+footer a:hover {
+    border: 2px solid #4A4A4A;
+    background: #4A4A4A;
+    color: #E7E7E7;
+}
