@@ -20,7 +20,7 @@ header {
     margin: 5px;
     border-radius: 5px;
     border: 2px solid #4A4A4A;
-    height: 70px;
+    height: 100px;
     width: 180px;
     position: absolute;
     top: 0;
@@ -33,10 +33,16 @@ header {
 
 header label {
     width: 70px;
-    display: list-item;
+    display: inline-block;
     line-height: 20px;
     height: 22px;
     color: #4A4A4A;
+}
+
+header span {
+    display: inline-block;
+    color: #4A4A4A;
+    font-weight: 600;
 }
 
 #game {
@@ -59,6 +65,22 @@ header label {
     -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
     transition: width 500ms ease-in-out, height 500ms ease-in-out;
+    border-radius: 25px;
+}
+
+#game .clue {
+    left: 0;
+    top: 0;
+    background: #609C83;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    z-index: 988;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+    transition: width 500ms ease-in-out, height 500ms ease-in-out;
+    border-radius: 25px;
 }
 
 #game .m-snake.start {
@@ -80,6 +102,7 @@ header label {
     position: absolute;
     z-index: 987;
     background: #A03C44;
+    border-radius: 25px;
 }
 
 footer {
